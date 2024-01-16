@@ -12,6 +12,7 @@ This repository collects reference information and materials about the use case 
 ## General Verifiable Credentials
 
 | Verifiable Credential Name	| Link to the JSON Schema (if it already exists) |	Link to Examples |
+|---|---|---|
 | Natural person VerifiableId | https://code.europa.eu/ebsi/json-schema/-/tree/main/schemas/ebsi-vid/natural-person/2022-11/schema.json | https://code.europa.eu/ebsi/json-schema/-/tree/main/schemas/ebsi-vid/natural-person/2022-11/examples |
 | Legal VerifiableId | https://code.europa.eu/ebsi/json-schema/-/tree/main/schemas/ebsi-vid/legal-entity/2023-08/schema.json | https://code.europa.eu/ebsi/json-schema/-/tree/main/schemas/ebsi-vid/legal-entity/2023-08/examples |
 | VerifiableAttestation | https://code.europa.eu/ebsi/json-schema/-/tree/main/schemas/ebsi-attestation/2023-10/schema.json | https://code.europa.eu/ebsi/json-schema/-/tree/main/schemas/ebsi-attestation/2023-10/examples |
@@ -20,6 +21,7 @@ This repository collects reference information and materials about the use case 
 ## Domain-specific Verifiable Credentials
 
 | Verifiable Credential Name	| Link to the JSON Schema (if it already exists) |	Link to Examples |
+|---|---|---|
 | KycChecksCredential |  | https://credentials.walt.id/credentials/kycdatacredential |
 | KycDataCredential |  |  https://credentials.walt.id/credentials/kycdatacredential |
 | KybChecksCredential |  |
@@ -30,51 +32,54 @@ This repository collects reference information and materials about the use case 
 
 ## Trust Chain actors
 
-| Actor               | Role           | Accredited to                                                                                                                                                                                                                                | Accredited by       | Additional Information |
-|---------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|------------------------|
-| EBSI Support Office | Root TAO       | - (Accredit) Sub-TAO to accredit Trusted Issuers to Issue: [KYC,KYB,Onepass] VCs - (Issue): VerifiableAccreditationToAccredit                                                                                                                | Self                |                        |
-| OnePass Consortium  | Sub-TAO        | - (Accredit) Sub-TAO to accredit Trusted Issuers to Issue: KycChecksCredential, KycDataCredential, KybChecksCredential, KybDataCredential, StartupMomentumCredential, Natural person VerifiableId, Legal VerifiableId, VerifiableAttestation | EBSI Support Office |                        |
-| FundingBox          | Trusted Issuer | - (Issue): KycChecksCredential, KycDataCredential, KybChecksCredential, KybDataCredential, StartupMomentumCredential, Natural person VerifiableId, Legal VerifiableId                                                                        | OnePass Consortium  |                        |
-| BIA                 | Trusted Issuer | - (Issue): KybChecksCredential, KybDataCredential, Legal VerifiableId                                                                                                                                                                        | OnePass Consortium  |                        |
-| Accelerace          | Trusted Issuer | - (Issue): StartupMomentumCredential                                                                                                                                                                                                         | OnePass Consortium  |                        |
-| WaltId              | Trusted Issuer | - (Issue): KycChecksCredential, KycDataCredential, Natural person VerifiableId, Legal VerifiableId                                                                                                                                           | OnePass Consortium  |                        |
+| Actor | Role | Accredited to| Accredited by |
+|---|---|---|---|
+| EBSI Support Office | Root TAO | - (Accredit) Sub-TAO to accredit Trusted Issuers to Issue: [KYC,KYB,Onepass] VCs - (Issue): VerifiableAccreditationToAccredit | Self | |
+| OnePass Consortium | Sub-TAO | - (Accredit) Trusted Issuers to Issue: KycChecksCredential, KycDataCredential, KybChecksCredential, KybDataCredential, StartupMomentumCredential, Natural person VerifiableId, Legal VerifiableId, VerifiableAttestation | EBSI Support Office |
+| FundingBox | Trusted Issuer | - (Issue): KycChecksCredential, KycDataCredential, KybChecksCredential, KybDataCredential, StartupMomentumCredential, Natural person VerifiableId, Legal VerifiableId | OnePass Consortium  |
+| BIA | Trusted Issuer | - (Issue): KybChecksCredential, KybDataCredential, Legal VerifiableId | OnePass Consortium |
+| Accelerace | Trusted Issuer | - (Issue): StartupMomentumCredential | OnePass Consortium  |
+| WaltId | Trusted Issuer | - (Issue): KycChecksCredential, KycDataCredential, Natural person VerifiableId, Legal VerifiableId | OnePass Consortium  |  
 
 
 ## Trusted issuers
 
 | Trusted Issuer |	Verifiable Credential to be issued |	Does it require accreditation? |
-| FundingBox | KycChecksCredential, KycDataCredential, KybChecksCredential, KybDataCredential, StartupMomentumCredential, Natural person VerifiableId, Legal VerifiableId | OnePass Consortium | yes |
-| BIA | KybChecksCredential, KybDataCredential, Legal VerifiableId | OnePass Consortium |  yes |
+|---|---|---|
+| FundingBox | KycChecksCredential, KycDataCredential, KybChecksCredential, KybDataCredential, StartupMomentumCredential, Natural person VerifiableId, Legal VerifiableId | yes |
+| BIA | KybChecksCredential, KybDataCredential, Legal VerifiableId | yes |
 | Accelerace | StartupMomentumCredential | OnePass Consortium |  yes |
 | WaltId | KycChecksCredential, KycDataCredential, Natural person VerifiableId, Legal VerifiableId | OnePass Consortium | yes |
 
 
 # Flows
 
-## Startup enrollment flow
+## [Startup enrollment flow](screen-flows/startup-enrollment-flow)
 
 The startup enrollment journey consists of seven independent flows, which are grouped into three main categories: Onboarding, Verification, and Workspace Setup. 
 
 NOTE: As the OnePass Bridge pilot is accessible only through invitation, an optional flow is provided for users to request an invitation by completing a form. This particular flow is not yet covered here.
 
-### Onboarding
+### [Onboarding](screen-flows/startup-enrollment-flow)
 
 - Sign in/Sign up
-- Create a company profile
+- Create a company profile - [screen flow](screen-flows/startup-enrollment-flow/1-onboarding/1.2-create-organization-profile)
 
-### Verification
+### [Verification](screen-flows/startup-enrollment-flow/2-verification)
 
 - Eligibility check (This is a background job; shows a warning message if the organization is not eligible)
-- Connect wallet (optional)
-- User identity verification
-- Business verification
+- Connect wallet (optional) - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.1-connect-wallet)
+- User identity verification - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.2-KYC)
+  - KYCDataCredential issuance - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.4-KYB)
+- Business verification - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.4-KYB)
+  - KYBDataCredential issuance  - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.5-KYB-credential-issuance) 
 
-### Workspace setup
+### [Workspace setup](screen-flows/startup-enrollment-flow/3-workspace-setup)
 
 - Create a workspace
-- Create a data room
+- Create a data room  - [screen flow](screen-flows/startup-enrollment-flow/3-workspace-setup/3.2-create-data-room)
 
-## List of figures
+
 
 
 
