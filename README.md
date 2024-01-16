@@ -22,8 +22,8 @@ This repository collects reference information and materials about the use case 
 
 | Verifiable Credential Name	| Link to the JSON Schema (if it already exists) |	Link to Examples |
 |---|---|---|
-| KycChecksCredential |  | https://credentials.walt.id/credentials/kycdatacredential |
-| KycDataCredential |  |  https://credentials.walt.id/credentials/kycdatacredential |
+| KycChecksCredential |  | [Example](credentials/KycChecksCredential/examples/example.json) |
+| KycDataCredential |  |  [Example](credentials/KycDataCredential/examples/example.json) |
 | KybChecksCredential |  |
 | KybDataCredential |  |
 | StartupMomentumCredential |  |
