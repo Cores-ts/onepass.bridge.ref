@@ -62,7 +62,7 @@ The startup enrollment journey consists of seven independent flows, which are gr
 
 NOTE: As the OnePass Bridge pilot is accessible only through invitation, an optional flow is provided for users to request an invitation by completing a form. This particular flow is not yet covered here.
 
-### [Onboarding](screen-flows/startup-enrollment-flow)
+### [Onboarding](screen-flows/startup-enrollment-flow/1-onboarding)
 
 - Sign in/Sign up - [screen flow](screen-flows/startup-enrollment-flow/1-onboarding/1.1-sign-up)
 - Create a company profile - [screen flow](screen-flows/startup-enrollment-flow/1-onboarding/1.2-create-organization-profile)
@@ -80,12 +80,6 @@ NOTE: As the OnePass Bridge pilot is accessible only through invitation, an opti
 
 - Create a workspace
 - Create a data room  - [screen flow](screen-flows/startup-enrollment-flow/3-workspace-setup/3.2-create-data-room)
-
-
-
-
-
-
 
 ## Investor enrollment flow
 
