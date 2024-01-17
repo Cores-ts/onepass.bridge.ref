@@ -62,7 +62,7 @@ NOTE: As the OnePass Bridge pilot is accessible only through invitation, an opti
 
 ### [Onboarding](screen-flows/startup-enrollment-flow)
 
-- Sign in/Sign up
+- Sign in/Sign up - [screen flow](screen-flows/startup-enrollment-flow/1-onboarding/1.1-sign-up)
 - Create a company profile - [screen flow](screen-flows/startup-enrollment-flow/1-onboarding/1.2-create-organization-profile)
 
 ### [Verification](screen-flows/startup-enrollment-flow/2-verification)
