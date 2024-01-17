@@ -9,7 +9,7 @@ This repository collects reference information and materials about the use case 
 
 # Credentials
 
-## General Verifiable Credentials
+## Generic Verifiable Credentials
 
 | Verifiable Credential Name	| Link to the JSON Schema (if it already exists) |	Link to Examples |
 |---|---|---|
