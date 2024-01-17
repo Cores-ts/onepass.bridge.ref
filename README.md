@@ -48,8 +48,8 @@ This repository collects reference information and materials about the use case 
 |---|---|---|
 | FundingBox | KycChecksCredential, KycDataCredential, KybChecksCredential, KybDataCredential, StartupMomentumCredential, Natural person VerifiableId, Legal VerifiableId | yes |
 | BIA | KybChecksCredential, KybDataCredential, Legal VerifiableId | yes |
-| Accelerace | StartupMomentumCredential | OnePass Consortium |  yes |
-| WaltId | KycChecksCredential, KycDataCredential, Natural person VerifiableId, Legal VerifiableId | OnePass Consortium | yes |
+| Accelerace | StartupMomentumCredential |  yes |
+| WaltId | KycChecksCredential, KycDataCredential, Natural person VerifiableId, Legal VerifiableId | yes |
 
 
 # Flows
