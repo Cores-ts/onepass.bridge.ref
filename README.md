@@ -67,7 +67,7 @@ NOTE: As the OnePass Bridge pilot is accessible only through invitation, an opti
 
 ### [Verification](screen-flows/startup-enrollment-flow/2-verification)
 
-- Eligibility check (This is a background job; shows a warning message if the organization is not eligible)
+- Eligibility check (This is a background job; shows a warning message if the organization is not eligible) - [eligibility warning](screen-flows/startup-enrollment-flow/2-verification/2.0-eligibility-check/2.0.1-eligibility-warning.png)
 - Connect wallet (optional) - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.1-connect-wallet)
 - User identity verification - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.2-KYC)
   - KYCDataCredential issuance - [screen flow](screen-flows/startup-enrollment-flow/2-verification/2.4-KYB)
